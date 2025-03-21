@@ -1,4 +1,4 @@
-import { httpClient } from "../config/AxiosHelper"
+import { httpClient } from "../config/AxiosHelper.js"
 
 export const createRoomApi =async (roomDetail)=>{
     const response = await httpClient.post(`/api/v1/rooms`, roomDetail,{
