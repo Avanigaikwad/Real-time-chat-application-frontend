@@ -4,3 +4,7 @@ import App from "./App.jsx";
 import "./index.css"; // If you have global styles
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+if (window.attachEvent) {
+    window.attachEvent = () => console.warn("attachEvent is deprecated");
+  }
+  
